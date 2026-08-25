@@ -1,37 +1,63 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;font-size:18px;line-height:1.5;background:#f5f5f5;color:#111}.site-header,.topbar{border-bottom:2px solid #0066cc}.site-header{padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;background:#fff}.site-header .brand{font-size:1.5rem;font-weight:700}.site-header nav{display:flex;gap:1.5rem;align-items:center}.site-header nav a{text-decoration:none;color:#333;font-weight:500}nav a:hover{color:#0066cc}.btn{padding:0.5rem 1rem;border:none;border-radius:0.25rem;cursor:pointer;background:#0066cc;color:#fff;font-weight:600}.btn:hover{background:#0052a3}.btn-dark{background:#333;color:#fff}.btn-dark:hover{background:#000}.btn-primary{background:#0066cc}.btn-primary:hover{background:#0052a3}.btn.full{width:100%;padding:0.75rem}.panel{padding:2rem;margin:1rem auto;max-width:1000px;background:#fff;border-radius:0.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.1)}.hero{text-align:center;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#fff;border-radius:1rem}.hero h1{font-size:3rem;margin-bottom:1rem}.hero p{font-size:1.25rem;margin-bottom:2rem}.section-title{text-align:center;margin-bottom:2rem}.section-title h2{font-size:2.5rem;margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:1.5rem}.grid-item{padding:1.5rem;background:#f9f9f9;border-radius:0.5rem;border-left:4px solid #0066cc;transition:transform 0.3s, box-shadow 0.3s}.grid-item:hover{transform:translateY(-5px);box-shadow:0 8px 16px rgba(0,0,0,0.15)}.grid-item h3{margin-top:0;color:#0066cc}.modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;z-index:1000}.modal.hidden{display:none}.modal-box{background:#fff;padding:2rem;border-radius:0.75rem;width:90%;max-width:400px;box-shadow:0 10px 40px rgba(0,0,0,0.2)}.close{position:absolute;top:10px;right:15px;background:none;border:none;font-size:2rem;cursor:pointer;color:#999}.close:hover{color:#333}.modal-box h2{margin-top:0;color:#0066cc}.modal-box label{display:block;margin-top:1rem;font-weight:600;color:#333}.modal-box input{width:100%;padding:0.75rem;margin-top:0.5rem;border:1px solid #ddd;border-radius:0.25rem;font-size:1rem}.modal-box input:focus{outline:none;border-color:#0066cc;box-shadow:0 0 5px rgba(0,102,204,0.3)}.message{margin-top:1rem;padding:1rem;border-radius:0.25rem;text-align:center;font-weight:600}.message.success{background:#d4edda;color:#155724;border:1px solid #c3e6cb}.message.error{background:#f8d7da;color:#721c24;border:1px solid #f5c6cb}.message.info{background:#d1ecf1;color:#0c5460;border:1px solid #bee5eb}
 
-/* Social Media Links */
+/* Social Media Links - Box Style with Brand Colors */
 .social-media {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
-.social-media a {
+.social-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: white;
-  font-size: 20px;
+  gap: 10px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
   transition: all 0.3s ease;
   text-decoration: none;
-  border: 2px solid white;
+  border: 2px solid;
+  color: white;
+  min-width: 150px;
 }
 
-.social-media a:hover {
-  background-color: white;
-  color: #764ba2;
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.social-btn i {
+  font-size: 24px;
 }
 
-.social-media a i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.social-btn span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* YouTube Button - Official YouTube Red */
+.youtube-btn {
+  background-color: #FF0000;
+  border-color: #CC0000;
+  color: white;
+}
+
+.youtube-btn:hover {
+  background-color: #CC0000;
+  border-color: #990000;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+}
+
+/* LinkedIn Button - Official LinkedIn Blue */
+.linkedin-btn {
+  background-color: #0A66C2;
+  border-color: #084594;
+  color: white;
+}
+
+.linkedin-btn:hover {
+  background-color: #084594;
+  border-color: #062d5f;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.4);
 }
