@@ -3,13 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nandani steel consultants and services</title>
+  <title>NANDANI STEEL CONSULTANTS</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .brand { letter-spacing: .04em; }
+    .hero { position: relative; overflow: hidden; }
+    .hero::after { content: ""; position: absolute; width: 280px; height: 280px; right: -80px; top: -90px; border: 2px solid rgba(255,255,255,.15); border-radius: 50%; box-shadow: 0 0 0 25px rgba(255,255,255,.05), 0 0 0 50px rgba(255,255,255,.04); }
+    .hero h1 { max-width: 850px; }
+    .hero-lead { max-width: 850px; font-size: 1.12rem; }
+    .service-intro { max-width: 900px; margin: 0 auto 30px; text-align: center; color: #475569; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+    .service-card { position: relative; min-height: 300px; padding: 0 22px 24px; overflow: hidden; border: 1px solid #dbe3ec; border-radius: 14px; background: linear-gradient(145deg, #fff, #f4f7fa); box-shadow: 0 10px 24px rgba(15, 23, 42, .08); transition: transform .25s ease, box-shadow .25s ease; }
+    .service-card:hover { transform: translateY(-7px); box-shadow: 0 18px 30px rgba(15, 23, 42, .15); }
+    .service-card h3 { margin: 18px 0 8px; color: #172033; font-size: 1.12rem; }
+    .service-card p { margin: 0; color: #526174; font-size: .94rem; }
+    .drawing { height: 118px; margin: 0 -22px; padding: 12px; background: #172033; }
+    .drawing svg { width: 100%; height: 100%; }
+    .service-tag { display: inline-block; margin-top: 18px; padding: 4px 10px; border-radius: 999px; background: #e8a928; color: #172033; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .service-note { margin-top: 28px; padding: 18px 22px; border-left: 4px solid #e8a928; border-radius: 8px; background: #fff8e7; color: #5b4720; }
+    .section-title h2 { text-transform: uppercase; letter-spacing: .05em; }
+  </style>
 </head>
 <body>
 <header class="site-header">
-  <div class="brand">NANDANI STEEL CONSULTANTS AND Engineering</div>
+  <div class="brand">NANDANI STEEL CONSULTANTS</div>
   <nav>
     <a href="#home">Home</a><a href="#services">Services</a><a href="#contact">Contact</a>
     <button class="btn" onclick="showLogin('customer')">Customer Login</button>
@@ -19,30 +37,29 @@
 
 <main>
 <section id="home" class="hero panel">
-  <h1>Mechanical CAD Drawing Services</h1>
-  <p>Professional equipment, fabrication, assembly and engineering drawing support.</p>
-  
-  <!-- Social Media Links - Box Style -->
+  <h1>Custom Machine Design &amp; Fabrication for Steel Plants</h1>
+  <p class="hero-lead">Practical engineering solutions, fabrication drawings and equipment design support for complete steel, rolling mill, utility and chemical plant operations.</p>
   <div class="social-media">
-    <a href="https://youtube.com/@yuo855?si=qJmUVWTOLc9eMwO-" target="_blank" class="social-btn youtube-btn" title="Subscribe on YouTube">
-      <i class="fab fa-youtube"></i>
-      <span>YouTube</span>
-    </a>
-    <a href="https://www.linkedin.com/company/133455294/admin/dashboard/" target="_blank" class="social-btn linkedin-btn" title="Follow on LinkedIn">
-      <i class="fab fa-linkedin"></i>
-      <span>LinkedIn</span>
-    </a>
+    <a href="https://youtube.com/@yuo855?si=qJmUVWTOLc9eMwO-" target="_blank" class="social-btn youtube-btn" title="Subscribe on YouTube"><i class="fab fa-youtube"></i><span>YouTube</span></a>
+    <a href="https://www.linkedin.com/company/133455294/admin/dashboard/" target="_blank" class="social-btn linkedin-btn" title="Follow on LinkedIn"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
   </div>
 </section>
 
 <section id="services" class="panel">
   <div class="section-title"><h2>Our Services</h2></div>
-  <div id="publicServices" class="grid"></div>
+  <p class="service-intro">From concept and detailed machine design to fabrication-ready drawings, NANDANI STEEL CONSULTANTS delivers dependable engineering support tailored to your plant requirements.</p>
+  <div class="service-grid">
+    <article class="service-card"><div class="drawing"><svg viewBox="0 0 300 100" fill="none" stroke="#e8a928" stroke-width="2"><path d="M12 78h276M30 78V35h48v43M78 55h42V20h48v58M168 48h45v30M213 60h55v18M48 35V15h22v20M120 20V8h48v12"/><circle cx="55" cy="78" r="10"/><circle cx="144" cy="78" r="10"/><circle cx="236" cy="78" r="10"/><path d="M90 35h18M180 48h18" stroke="#7dd3fc"/></svg></div><span class="service-tag">Plant Machinery</span><h3>Steel Plant Equipment</h3><p>Custom design and fabrication support for sinter, coke oven, blast furnace, HBI, BOF, EAF and SMS equipment.</p></article>
+    <article class="service-card"><div class="drawing"><svg viewBox="0 0 300 100" fill="none" stroke="#7dd3fc" stroke-width="2"><path d="M10 78h280M20 70h260M35 70V30h45v40M80 50h52v20M132 70V22h42v48M174 42h45v28M219 70V32h42v38"/><path d="M35 30l22-14 23 14M132 22l21-13 21 13M219 32l21-14 21 14" stroke="#e8a928"/><circle cx="57" cy="70" r="8"/><circle cx="153" cy="70" r="8"/><circle cx="240" cy="70" r="8"/></svg></div><span class="service-tag">Rolling Technology</span><h3>Rolling &amp; Finishing Lines</h3><p>Engineering assistance for continuous casting, HSM, cold rolling, galvanizing, color coating, rewinding, CSR and CTL lines.</p></article>
+    <article class="service-card"><div class="drawing"><svg viewBox="0 0 300 100" fill="none" stroke="#e8a928" stroke-width="2"><path d="M12 78h276M35 78V32h52v46M87 55h52M139 78V20h48v58M187 45h42v33M229 60h38v18"/><path d="M35 32h52M47 32V18h28v14M151 20V8h24v12M205 45V25h22v20" stroke="#7dd3fc"/><circle cx="61" cy="78" r="9"/><circle cx="163" cy="78" r="9"/><circle cx="248" cy="78" r="9"/></svg></div><span class="service-tag">Complete Solutions</span><h3>Utilities &amp; Chemical Plants</h3><p>Plant utilities, material handling and chemical factory equipment designed and fabricated as required.</p></article>
+    <article class="service-card"><div class="drawing"><svg viewBox="0 0 300 100" fill="none" stroke="#7dd3fc" stroke-width="2"><rect x="25" y="28" width="52" height="42"/><rect x="124" y="18" width="52" height="52"/><rect x="223" y="35" width="52" height="35"/><path d="M77 49h47M176 49h47M16 80h270M45 28V12h12v16M144 18V5h12v13M243 35V18h12v17" stroke="#e8a928"/><path d="M47 48h8M146 44h8M245 52h8"/></svg></div><span class="service-tag">CAD Engineering</span><h3>Design &amp; Fabrication Drawings</h3><p>Concept layouts, detailed machine drawings, assembly drawings, fabrication details and production-ready documentation.</p></article>
+  </div>
+  <div class="service-note"><strong>Have a special requirement?</strong> Share your plant equipment requirement with us and we will develop a practical, customized engineering solution.</div>
 </section>
 
 <section id="contact" class="panel">
   <h2>Contact</h2>
-  <p>NANDANI STEEL CONSULTANTS AND Engineering</p>
+  <p>NANDANI STEEL CONSULTANTS</p>
   <p>Contact details can be configured later from Admin Settings.</p>
 </section>
 </main>
@@ -52,10 +69,8 @@
     <button class="close" onclick="hideLogin()">×</button>
     <h2 id="loginTitle">Customer Login</h2>
     <form id="loginForm">
-      <label>Email</label>
-      <input id="loginEmail" type="email" required>
-      <label>4-Digit Access Number</label>
-      <input id="loginAccess" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required>
+      <label>Email</label><input id="loginEmail" type="email" required>
+      <label>4-Digit Access Number</label><input id="loginAccess" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required>
       <button class="btn btn-primary full" type="submit">LOGIN</button>
     </form>
     <p id="loginMessage" class="message"></p>
