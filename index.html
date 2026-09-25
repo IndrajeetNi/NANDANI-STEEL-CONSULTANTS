@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>NANDANI STEEL CONSULTANTS</title>
-  <meta name="description" content="Custom machine design, plant engineering support, fabrication drawings and industrial solutions by NANDANI STEEL CONSULTANTS.">
-  <meta name="keywords" content="NANDANI STEEL CONSULTANTS, steel plant consultancy, machine design, fabrication drawings, industrial engineering">
+  <meta name="description" content="NANDANI STEEL CONSULTANTS provides custom machine design, fabrication drawings, engineering support, steel plant equipment solutions, rolling mill support, and industrial consultancy services.">
+  <meta name="keywords" content="NANDANI STEEL CONSULTANTS, steel plant consultancy, machine design, fabrication drawings, industrial engineering, rolling mill support, custom machinery">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
@@ -16,11 +16,17 @@
     <a class="brand-wrap" href="#home" aria-label="NANDANI Steel Consultants home">
       <img class="brand-logo" src="logo.svg" alt="NANDANI Steel Consultants logo">
     </a>
+
     <nav aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-light" onclick="showLogin('customer')">Customer Login</button>
+      <button class="btn btn-dark" onclick="showLogin('admin')">Admin</button>
+    </div>
   </header>
 
   <main>
@@ -29,17 +35,23 @@
         <div class="hero-copy">
           <span class="eyebrow">Engineering Solutions</span>
           <h1>Custom Machine Design &amp; Fabrication for Steel Plants</h1>
-          <p class="hero-lead">Practical engineering solutions, fabrication drawings and equipment design support for complete steel, rolling mill, utility and chemical plant operations.</p>
+          <p class="hero-lead">
+            Practical engineering solutions, fabrication drawings and equipment design support for complete steel,
+            rolling mill, utility and chemical plant operations.
+          </p>
+
           <div class="hero-actions">
             <a href="#services" class="btn btn-primary">Explore Services</a>
             <a href="#contact" class="btn btn-secondary">Contact Us</a>
           </div>
+
           <ul class="hero-points">
             <li><i class="fa-solid fa-check"></i> Machine design &amp; detailing</li>
             <li><i class="fa-solid fa-check"></i> Plant equipment support</li>
             <li><i class="fa-solid fa-check"></i> Rolling mill &amp; utility systems</li>
           </ul>
         </div>
+
         <div class="hero-visual">
           <img src="image_22b96267.jpg" alt="NANDANI Steel Consultants engineering support image">
         </div>
@@ -52,27 +64,147 @@
         <h2>Our Services</h2>
         <p>Dependable engineering support tailored to your plant requirements.</p>
       </div>
+
       <div class="service-grid">
-        <article class="service-card"><div class="service-icon"><i class="fa-solid fa-industry"></i></div><span class="service-tag">Plant Machinery</span><h3>Steel Plant Equipment</h3><ul><li>Custom machine design</li><li>Fabrication and assembly drawings</li><li>Spare parts and replacement components</li><li>Sinter, coke oven, blast furnace, HBI, BOF, EAF and SMS equipment</li></ul></article>
-        <article class="service-card"><div class="service-icon"><i class="fa-solid fa-gears"></i></div><span class="service-tag">Rolling Technology</span><h3>Rolling &amp; Finishing Lines</h3><ul><li>Continuous casting equipment</li><li>HSM and cold rolling mill support</li><li>Galvanizing and color coating lines</li><li>Rewinding, CSR and CTL line components</li></ul></article>
-        <article class="service-card"><div class="service-icon"><i class="fa-solid fa-flask"></i></div><span class="service-tag">Complete Solutions</span><h3>Utilities &amp; Chemical Plants</h3><ul><li>Utility equipment design</li><li>Material-handling systems</li><li>Chemical plant equipment</li><li>Repair and replacement support</li></ul></article>
-        <article class="service-card"><div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div><span class="service-tag">Custom Engineering</span><h3>Design &amp; Custom Machinery</h3><ul><li>Custom machine design and development</li><li>Special-purpose machinery</li><li>Machine modification and upgrades</li><li>Reverse engineering of existing machinery</li></ul></article>
-        <article class="service-card"><div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><span class="service-tag">Plant Restoration</span><h3>Plant Revival &amp; Restoration</h3><ul><li>Revival of idle or non-operational plants</li><li>Plant condition assessment and gap analysis</li><li>Equipment repair, replacement and upgrades</li><li>Production-line recommissioning support</li></ul></article>
-        <article class="service-card"><div class="service-icon"><i class="fa-solid fa-chart-line"></i></div><span class="service-tag">Plant Operations</span><h3>Lease-Based Plant Operation</h3><ul><li>Plant operation and management</li><li>Production and operational supervision</li><li>Manpower and utility management</li><li>Process stabilization and performance monitoring</li></ul></article>
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-industry"></i></div>
+          <span class="service-tag">Plant Machinery</span>
+          <h3>Steel Plant Equipment</h3>
+          <ul>
+            <li>Custom machine design</li>
+            <li>Fabrication and assembly drawings</li>
+            <li>Spare parts and replacement components</li>
+            <li>Sinter, coke oven, blast furnace, HBI, BOF, EAF and SMS equipment</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+          <span class="service-tag">Rolling Technology</span>
+          <h3>Rolling &amp; Finishing Lines</h3>
+          <ul>
+            <li>Continuous casting equipment</li>
+            <li>HSM and cold rolling mill support</li>
+            <li>Galvanizing and color coating lines</li>
+            <li>Rewinding, CSR and CTL line components</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+          <span class="service-tag">Complete Solutions</span>
+          <h3>Utilities &amp; Chemical Plants</h3>
+          <ul>
+            <li>Utility equipment design</li>
+            <li>Material-handling systems</li>
+            <li>Chemical plant equipment</li>
+            <li>Repair and replacement support</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <span class="service-tag">Custom Engineering</span>
+          <h3>Design &amp; Custom Machinery</h3>
+          <ul>
+            <li>Custom machine design and development</li>
+            <li>Special-purpose machinery</li>
+            <li>Machine modification and upgrades</li>
+            <li>Reverse engineering of existing machinery</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <span class="service-tag">Plant Restoration</span>
+          <h3>Plant Revival &amp; Restoration</h3>
+          <ul>
+            <li>Revival of idle or non-operational plants</li>
+            <li>Plant condition assessment and gap analysis</li>
+            <li>Equipment repair, replacement and upgrades</li>
+            <li>Production-line recommissioning support</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <span class="service-tag">Plant Operations</span>
+          <h3>Lease-Based Plant Operation</h3>
+          <ul>
+            <li>Plant operation and management</li>
+            <li>Production and operational supervision</li>
+            <li>Manpower and utility management</li>
+            <li>Process stabilization and performance monitoring</li>
+          </ul>
+        </article>
       </div>
-      <div class="service-note"><strong>Have a special requirement?</strong> Share your plant equipment requirement with us and we will develop a practical, customized engineering solution.</div>
+
+      <div class="service-note">
+        <strong>Have a special requirement?</strong> Share your plant equipment requirement with us and we will develop a practical, customized engineering solution.
+      </div>
     </section>
 
     <section id="contact" class="panel contact-panel">
-      <div class="section-title"><span class="section-kicker">Let’s connect</span><h2>Contact</h2></div>
+      <div class="section-title">
+        <span class="section-kicker">Let’s connect</span>
+        <h2>Contact</h2>
+      </div>
+
       <div class="contact-wrap">
-        <div class="contact-box"><i class="fa-solid fa-envelope"></i><a href="mailto:nandanisteelconsultants@gamil.com">nandanisteelconsultants@gamil.com</a></div>
-        <div class="address-box"><strong>Primary Address</strong><br>G-301, Shashank Park, Adajan Gam<br>Surat, Gujarat, India 395009</div>
-        <div class="address-box"><strong>Secondary Address</strong><br>HN 58, Ram Kishun Nishad, Village Karsawa,<br>Post Baijapur, Jaupur, U.P., India 222001</div>
+        <div class="contact-box">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:nandanisteelconsultants@gamil.com">nandanisteelconsultants@gamil.com</a>
+        </div>
+
+        <div class="address-box">
+          <strong>Primary Address</strong><br>
+          G-301, Shashank Park, Adajan Gam<br>
+          Surat, Gujarat, India 395009
+        </div>
+
+        <div class="address-box">
+          <strong>Secondary Address</strong><br>
+          HN 58, Ram Kishun Nishad, Village Karsawa,<br>
+          Post Baijapur, Jaupur, U.P., India 222001
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="footer-container"><div class="footer-col"><h4>NANDANI STEEL CONSULTANTS</h4><p>Custom machine design, fabrication drawings, CAD services and technical support for steel plants, rolling mills, utility systems and chemical plants.</p></div></div><div class="footer-bottom"><p>&copy; 2026 NANDANI STEEL CONSULTANTS. All rights reserved.</p></div></footer>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>NANDANI STEEL CONSULTANTS</h4>
+        <p>
+          Custom machine design, fabrication drawings, CAD services and technical support for steel plants,
+          rolling mills, utility systems and chemical plants.
+        </p>
+        <p class="legal-note">
+          Licensing &amp; Registration: Company registration details are not publicly disclosed at this stage.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 NANDANI STEEL CONSULTANTS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-box">
+      <button class="close" onclick="hideLogin()">×</button>
+      <h2 id="loginTitle">Customer Login</h2>
+      <form id="loginForm">
+        <label>Email</label>
+        <input id="loginEmail" type="email" required>
+        <label>4-Digit Access Number</label>
+        <input id="loginAccess" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required>
+        <button class="btn btn-primary full" type="submit">LOGIN</button>
+      </form>
+      <p id="loginMessage" class="message"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
