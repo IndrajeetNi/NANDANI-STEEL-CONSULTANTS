@@ -10,10 +10,8 @@
 
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
         .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
@@ -27,11 +25,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 
-                <!-- ✅ HEADER LOGO (Top Left) -->
+                <!-- ✅ HEADER LOGO & TITLE (Single Line, Large, Bold) -->
                 <div class="flex items-center gap-3">
                     <img src="logo.jpg" alt="NANDANI STEEL CONSULTANTS Logo" class="h-12 w-auto object-contain">
-                    <span class="font-bold text-base md:text-lg tracking-tight text-slate-900 leading-tight">
-                        NANDANI STEEL <br class="hidden md:block" /> CONSULTANTS
+                    <span class="font-extrabold text-xl md:text-3xl tracking-tight text-slate-900 whitespace-nowrap">
+                        NANDANI STEEL CONSULTANTS
                     </span>
                 </div>
 
@@ -78,60 +76,62 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fa-solid fa-water"></i>
+                
+                <!-- Card 1: Collaboration -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-full flex justify-center items-center mb-6">
+                        <span class="text-8xl">🤝</span>
                     </div>
                     <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">CCM</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Continuous Casting Equipment</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Customized CCM mold jackets, mold tubes, secondary cooling systems, dummy bar straighteners, rolls, ladles and tundishes.</p>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fa-solid fa-bolt"></i>
+                <!-- Card 2: Maintenance -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-full flex justify-center items-center mb-6">
+                        <span class="text-8xl">🛠</span>
                     </div>
                     <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">UTILITY</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Utility Equipment</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Mechanical equipment, components, modifications and replacement solutions for utility and supporting plant systems.</p>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fa-solid fa-arrows-left-right"></i>
+                <!-- Card 3: Conveyor -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-full flex justify-center items-center mb-6">
+                        <span class="text-8xl">⛓️</span>
                     </div>
                     <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">CONVEYOR</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Conveyors & Cooling Beds</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Billet conveyors, cooling beds and material-handling equipment designed around existing plant conditions.</p>
                 </div>
 
-                <!-- Card 4 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fa-solid fa-gears"></i>
+                <!-- Card 4: Plant Revival -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-full flex justify-center items-center mb-6">
+                        <span class="text-8xl">🏭</span>
                     </div>
                     <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">ROLLING MILL</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Rolling Mill Equipment</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Individual sariya/rebar rolling equipment, rolls, mill-related components, upgrades and maintenance support.</p>
                 </div>
 
-                <!-- Card 5 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fa-solid fa-database"></i>
+                <!-- Card 5: Tank -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-full flex justify-center items-center mb-6">
+                        <span class="text-8xl">💧</span>
                     </div>
                     <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">PRESSURE VESSELS</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Pressure Vessel Support</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Mechanical design coordination, fabrication drawings, modifications and equipment support based on project requirements.</p>
                 </div>
 
-                <!-- Card 6 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                <!-- Card 6: Design -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-full flex justify-center items-center mb-6 gap-2">
+                        <span class="text-8xl">⚖️</span>
+                        <span class="text-8xl">🧭</span>
                     </div>
                     <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">CUSTOM MACHINE</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Custom Machine Design</h3>
@@ -253,4 +253,4 @@
     </footer>
 
 </body>
-    </html>
+                        </html>
