@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Nandani Steel Consultants</title>
+    
+    <!-- ✅ WEB LOGO (FAVICON) -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .transition-all { transition: all 0.3s ease; }
+        .badge { font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 9999px; display: inline-block; }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- ================= MAIN LAYOUT (Sidebar + Content) ================= -->
+    <div class="flex h-screen overflow-hidden">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="w-64 bg-slate-900 text-slate-300 flex flex-col hidden md:flex">
+            <div class="h-16 flex items-center px-6 bg-slate-950 border-b border-slate-800">
+                <img src="logo.jpg" alt="Logo" class="h-8 w-auto object-contain mr-3">
+                <span class="font-bold text-sm text-white tracking-wide">CUSTOMER PORTAL</span>
+            </div>
+            
+            <nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1 text-sm font-medium">
+                <a href="customer-dashboard.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-gauge-high w-5 text-center"></i> Dashboard
+                </a>
+                <a href="customer-new-requirement.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-circle-plus w-5 text-center"></i> New Requirement
+                </a>
+                <a href="customer-quotations.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-invoice-dollar w-5 text-center"></i> Quotations
+                </a>
+                <!-- Active Orders (Active) -->
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 bg-blue-600 text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-boxes-stacked w-5 text-center"></i> Active Orders
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-diagram-project w-5 text-center"></i> Project Status
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-folder-open w-5 text-center"></i> Documents
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-truck-fast w-5 text-center"></i> Dispatch
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-invoice w-5 text-center"></i> Invoices & Payments
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-triangle-exclamation w-5 text-center"></i> Complaints
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-headset w-5 text-center"></i> Support
+                </a>
+            </nav>
+
+            <div class="p-4 border-t border-slate-800">
+                <a href="index.html" class="flex items-center justify-center gap-2 w-full bg-slate-800 hover:bg-red-600 text-white py-2 rounded-lg text-sm transition-all">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+
+            <!-- TOP HEADER -->
+            <header class="h-16 bg-white shadow-sm flex items-center justify-between px-6 border-b border-slate-200">
+                <div class="flex items-center gap-4">
+                    <button class="md:hidden text-slate-600 text-xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="text-lg font-bold text-slate-800">Order Tracking</h1>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-sm font-semibold text-slate-800">ABC Industries Pvt Ltd</p>
+                        <p class="text-xs text-slate-500">Customer</p>
+                    </div>
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">
+                        AB
+                    </div>
+                </div>
+            </header>
+
+            <!-- ORDER TRACKING CONTENT -->
+            <main class="flex-1 overflow-y-auto p-6 bg-slate-50">
+                
+                <!-- Page Title & Filters -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Active Orders</h2>
+                        <p class="text-sm text-slate-500 mt-1">Track the real-time progress of your orders and projects.</p>
+                    </div>
+                    <div class="flex gap-2 w-full sm:w-auto">
+                        <div class="relative flex-1 sm:w-64">
+                            <i class="fa-solid fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
+                            <input type="text" placeholder="Search order or project..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none text-sm transition-all">
+                        </div>
+                        <select class="px-4 py-2.5 rounded-lg border border-slate-300 focus:border-blue-500 outline-none text-sm bg-white">
+                            <option>All Stages</option>
+                            <option>In Progress</option>
+                            <option>Delayed</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- ================= ORDER CARD 1 ================= -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm mb-6 overflow-hidden">
+                    <!-- Card Header -->
+                    <div class="p-5 border-b border-slate-100 bg-slate-50 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Supply of CCM Mold Tubes</h3>
+                            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-2 text-xs text-slate-500">
+                                <span><i class="fa-solid fa-file-invoice text-slate-400 w-4"></i> Customer PO: <strong class="text-slate-700">PO-ABC-2026-045</strong></span>
+                                <span><i class="fa-solid fa-hashtag text-slate-400 w-4"></i> Internal Order: <strong class="text-slate-700">INT-ORD-2026-012</strong></span>
+                            </div>
+                        </div>
+                        <span class="badge bg-blue-100 text-blue-700">In Progress</span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-5 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Column 1: Basic Info -->
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Project Owner</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">Ramesh Kumar (Project Manager)</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Order Date</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">15 Jan 2026</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Committed Delivery Date</p>
+                                <p class="text-sm font-semibold text-red-600 mt-1">30 Apr 2026 <span class="text-xs font-normal text-red-500">(15 days delay)</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Progress & Stage -->
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs mb-1.5">
+                                    <span class="text-slate-500 font-medium uppercase tracking-wider">Overall Progress</span>
+                                    <span class="font-bold text-blue-600">65%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Current Stage</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">Manufacturing / Execution</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Next Milestone</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">Final Inspection - 10 Apr 2026</p>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Sub-Status Grid -->
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Drawing Approval</p>
+                                <p class="text-xs font-semibold text-emerald-600 mt-1"><i class="fa-solid fa-check-circle"></i> Approved</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Material Status</p>
+                                <p class="text-xs font-semibold text-emerald-600 mt-1"><i class="fa-solid fa-check-circle"></i> Received</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Manufacturing</p>
+                                <p class="text-xs font-semibold text-amber-600 mt-1"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Inspection</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-1"><i class="fa-solid fa-clock"></i> Pending</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Dispatch</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-1"><i class="fa-solid fa-clock"></i> Pending</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Installation</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-1"><i class="fa-solid fa-clock"></i> Pending</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Footer -->
+                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-800 flex items-center gap-2 transition-all">
+                            View Full Details <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ================= ORDER CARD 2 ================= -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm mb-6 overflow-hidden">
+                    <!-- Card Header -->
+                    <div class="p-5 border-b border-slate-100 bg-slate-50 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Custom Machine Design & Fabrication</h3>
+                            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-2 text-xs text-slate-500">
+                                <span><i class="fa-solid fa-file-invoice text-slate-400 w-4"></i> Customer PO: <strong class="text-slate-700">PO-ABC-2026-050</strong></span>
+                                <span><i class="fa-solid fa-hashtag text-slate-400 w-4"></i> Internal Order: <strong class="text-slate-700">INT-ORD-2026-018</strong></span>
+                            </div>
+                        </div>
+                        <span class="badge bg-amber-100 text-amber-700">Delayed</span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-5 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Column 1: Basic Info -->
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Project Owner</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">Suresh Patel (Project Manager)</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Order Date</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">01 Feb 2026</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Committed Delivery Date</p>
+                                <p class="text-sm font-semibold text-red-600 mt-1">15 May 2026 <span class="text-xs font-normal text-red-500">(5 days delay)</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Progress & Stage -->
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs mb-1.5">
+                                    <span class="text-slate-500 font-medium uppercase tracking-wider">Overall Progress</span>
+                                    <span class="font-bold text-amber-600">40%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                    <div class="bg-amber-500 h-2.5 rounded-full" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Current Stage</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">Procurement / Material Planning</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Next Milestone</p>
+                                <p class="text-sm font-semibold text-slate-800 mt-1">Material Receipt - 25 Apr 2026</p>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Sub-Status Grid -->
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Drawing Approval</p>
+                                <p class="text-xs font-semibold text-emerald-600 mt-1"><i class="fa-solid fa-check-circle"></i> Approved</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Material Status</p>
+                                <p class="text-xs font-semibold text-amber-600 mt-1"><i class="fa-solid fa-spinner fa-spin"></i> In Transit</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Manufacturing</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-1"><i class="fa-solid fa-clock"></i> Pending</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Inspection</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-1"><i class="fa-solid fa-clock"></i> Pending</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Dispatch</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-1"><i class="fa-solid fa-clock"></i> Pending</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Installation</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-1"><i class="fa-solid fa-clock"></i> Pending</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Footer -->
+                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-800 flex items-center gap-2 transition-all">
+                            View Full Details <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+  </html>
