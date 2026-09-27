@@ -1,57 +1,266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>NANDANI STEEL CONSULTANTS | Customized Mechanical Engineering</title>
-  <meta name="description" content="NANDANI STEEL CONSULTANTS provides customized mechanical equipment, plant revival, operations support and structured operating partnerships for idle and distress[...]
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    .service-art span { display: none !important; }
-    .service-art i { font-size: 3.8rem; position: relative; z-index: 2; filter: drop-shadow(0 8px 12px rgba(15,23,42,.18)); }
-    .art-ccm { background: linear-gradient(135deg,#dff4ff,#eef8ff) !important; }
-    .art-ccm i { color:#0284c7 !important; }
-    .art-utility { background: linear-gradient(135deg,#fff4c2,#fffaf0) !important; }
-    .art-utility i { color:#eab308 !important; }
-    .art-conveyor { background: linear-gradient(135deg,#dcfce7,#f0fdf4) !important; }
-    .art-conveyor i { color:#16a34a !important; }
-    .art-rolling { background: linear-gradient(135deg,#e0e7ff,#eef2ff) !important; }
-    .art-rolling i { color:#4f46e5 !important; }
-    .art-vessel { background: linear-gradient(135deg,#ffedd5,#fff7ed) !important; }
-    .art-vessel i { color:#ea580c !important; }
-    .art-custom { background: linear-gradient(135deg,#f3e8ff,#faf5ff) !important; }
-    .art-custom i { color:#9333ea !important; }
-    .service-art:after { animation-duration: 2.8s !important; }
-    .business-status, .tax-status, .licensing-status { margin-top: 18px !important; font-size: 1.08rem !important; line-height: 1.75; font-weight: 700; color: #ffffff !important; }
-    .tax-status, .licensing-status { font-size: 0.98rem !important; font-weight: 600; color: #d5def0 !important; }
-    .brand-wrap { display: flex; align-items: center; gap: 16px; }
-    .header-title { font-size: 1.8rem; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandani Steel Consultants - Portal</title>
+    <!-- Tailwind CSS (CDN for easy setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        .transition-all { transition: all 0.3s ease; }
+    </style>
 </head>
-<body>
-<header class="site-header">
-  <a class="brand-wrap" href="#home" aria-label="NANDANI Steel Consultants home"><img class="brand-logo" src="image_22b96267.jpg" alt="NANDANI Steel Consultants logo"><span class="header-title">NANDANI STEEL CONSULTANTS</span></a>
-  <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a></nav>
-  <div class="header-actions"><button class="btn btn-light" onclick="showLogin('customer')">Customer Login</button><button class="btn btn-dark" onclick="showLogin('admin')">Admin</button></div>
-</header>
-<main>
-<section id="home" class="hero panel"><div class="hero-grid"><div class="hero-copy"><span class="eyebrow">Customized Mechanical Engineering</span><h1>Practical Equipment Solutions for Steel Plants[...]
-<section id="services" class="panel services-panel"><div class="section-title"><span class="section-kicker">What We Customize</span><h2>Our Services</h2><p>Explore our core mechanical equipment an[...]
-<div class="service-grid">
-<article class="service-card"><div class="service-art art-ccm"><i class="fa-solid fa-water"></i></div><span class="service-tag">CCM</span><h3>Continuous Casting Equipment</h3><p>Customized CCM mol[...]
-<article class="service-card"><div class="service-art art-utility"><i class="fa-solid fa-bolt"></i></div><span class="service-tag">UTILITY</span><h3>Utility Equipment</h3><p>Mechanical equipment, [...]
-<article class="service-card"><div class="service-art art-conveyor"><i class="fa-solid fa-arrows-left-right"></i></div><span class="service-tag">CONVEYOR</span><h3>Conveyors &amp; Cooling Beds</h3[...]
-<article class="service-card"><div class="service-art art-rolling"><i class="fa-solid fa-gears"></i></div><span class="service-tag">ROLLING MILL</span><h3>Rolling Mill Equipment</h3><p>Industrial [...]
-<article class="service-card"><div class="service-art art-vessel"><i class="fa-solid fa-database"></i></div><span class="service-tag">PRESSURE VESSELS</span><h3>Pressure Vessel Support</h3><p>Mech[...]
-<article class="service-card"><div class="service-art art-custom"><i class="fa-solid fa-compass-drafting"></i></div><span class="service-tag">CUSTOM MACHINE</span><h3>Custom Machine Design</h3><p>[...]
-</div><div class="service-note"><strong>Have a special requirement?</strong> Share the equipment name, drawing or plant problem. We can study it and propose a practical customized mechanical solut[...]
-<section id="capabilities" class="panel contact-panel"><div class="section-title"><span class="section-kicker">Plant Revival &amp; Operating Partnerships</span><h2>Revival, Operations &amp; Manage[...]
-<section id="contact" class="panel contact-panel"><div class="section-title"><span class="section-kicker">Let's connect</span><h2>Contact</h2></div><div class="contact-block"><div class="contact[...]
-</main>
-<footer class="site-footer"><div class="footer-container"><h4>NANDANI STEEL CONSULTANTS</h4><p>Customized mechanical equipment, plant revival, operating partnerships and running-plant support.</p>[...]
-<div id="loginModal" class="modal hidden"><div class="modal-box"><button class="close" onclick="hideLogin()">×</button><h2 id="loginTitle">Customer Login</h2><form id="loginForm"><label>Email</la[...]
-<script src="app.js"></script>
+<body class="text-slate-800">
+
+    <!-- ================= HEADER & NAVIGATION ================= -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">NANDANI STEEL</span>
+                </div>
+                
+                <!-- Nav Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#" class="hover:text-blue-600 transition-all">Home</a>
+                    <a href="#services" class="hover:text-blue-600 transition-all">Services</a>
+                    <a href="#portals" class="hover:text-blue-600 transition-all">Login Portals</a>
+                    <a href="#contact" class="hover:text-blue-600 transition-all">Contact</a>
+                </div>
+
+                <!-- Login Buttons (PDF Section 1) -->
+                <div class="flex items-center gap-3">
+                    <a href="#portals" class="hidden sm:block text-sm font-medium text-slate-600 hover:text-blue-600">Customer Login</a>
+                    <a href="#portals" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-800 transition-all">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <header class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wider uppercase">
+                    Customized Mechanical Engineering
+                </span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+                    Practical Equipment Solutions for Steel Plants
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    We design, customize and support individual mechanical equipment for steel plants and industrial operations. Our work is focused on practical solutions for your specific requirement.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-10">
+                    <a href="#services" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-all shadow-md shadow-blue-200">
+                        View Services
+                    </a>
+                    <a href="#contact" class="bg-white text-slate-700 border border-slate-300 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-all">
+                        Discuss Your Requirement
+                    </a>
+                </div>
+                <!-- Checklist -->
+                <ul class="space-y-3 text-slate-700 text-sm font-medium">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Individual equipment design and supply</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Mechanical work for running plants</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Plant revival and operating partnerships</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= SERVICES SECTION (Cards) ================= -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-semibold text-xs tracking-wider uppercase">What We Customize</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">Our Services</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Explore our core mechanical equipment and plant-support capabilities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">CCM</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Continuous Casting Equipment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Customized CCM mold jackets, mold tubes, secondary cooling systems, dummy bar straighteners, rolls, ladles and tundishes.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">UTILITY</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Utility Equipment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mechanical equipment, components, modifications and replacement solutions for utility and supporting plant systems.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">CONVEYOR</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Conveyors & Cooling Beds</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Billet conveyors, cooling beds and material-handling equipment designed around existing plant conditions.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">ROLLING MILL</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Rolling Mill Equipment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Individual sariya/rebar rolling equipment, rolls, mill-related components, upgrades and maintenance support.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">PRESSURE VESSELS</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Pressure Vessel Support</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mechanical design coordination, fabrication drawings, modifications and equipment support based on project requirements.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover transition-all">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase bg-blue-50 px-2 py-1 rounded">CUSTOM MACHINE</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-2">Custom Machine Design</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Special-purpose machines, reverse engineering, equipment modification and fabrication-ready mechanical drawings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LOGIN PORTALS SECTION (Strictly per PDF) ================= -->
+    <section id="portals" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-semibold text-xs tracking-wider uppercase">Secure Access</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">Login Portals</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Select your portal to access your dashboard, track orders, or manage operations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Customer Portal Card -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Customer Login</h3>
+                    <p class="text-xs text-slate-500 mb-4">Track requirements, orders, invoices and complaints.</p>
+                    <a href="#" class="block w-full bg-blue-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-all">Login</a>
+                </div>
+
+                <!-- Internal Employee Card -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-id-badge"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Internal Employee</h3>
+                    <p class="text-xs text-slate-500 mb-4">Access tasks, projects, complaints and material requests.</p>
+                    <a href="#" class="block w-full bg-emerald-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-emerald-700 transition-all">Login</a>
+                </div>
+
+                <!-- Vendor Card -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-truck-field"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Vendor Login</h3>
+                    <p class="text-xs text-slate-500 mb-4">Submit quotations, track POs and view payment status.</p>
+                    <a href="#" class="block w-full bg-amber-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-amber-700 transition-all">Login</a>
+                </div>
+
+                <!-- Administration Card -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 card-hover transition-all text-center">
+                    <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-800 text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Administration</h3>
+                    <p class="text-xs text-slate-500 mb-4">Central command and control center for all operations.</p>
+                    <a href="#" class="block w-full bg-slate-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition-all">Login</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8 text-sm text-slate-500">
+                <a href="#" class="hover:text-blue-600 underline">Forgot Password?</a> &nbsp;|&nbsp; 
+                <a href="#" class="hover:text-blue-600 underline">Help & Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-blue-400 font-semibold text-xs tracking-wider uppercase">Let's Connect</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Contact Us</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Email -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-envelope text-blue-400 text-xl"></i>
+                        <h3 class="font-semibold text-lg">Email</h3>
+                    </div>
+                    <a href="mailto:nandanisteelconsultants@gmail.com" class="text-slate-300 hover:text-white text-sm">nandanisteelconsultants@gmail.com</a>
+                </div>
+
+                <!-- Address 1 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-location-dot text-blue-400 text-xl"></i>
+                        <h3 class="font-semibold text-lg">Primary Address</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">G-301, Shashank Park, Adajan Gam, Surat, Gujarat, India 395009</p>
+                </div>
+
+                <!-- Address 2 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-location-dot text-blue-400 text-xl"></i>
+                        <h3 class="font-semibold text-lg">Secondary Address</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">HN 58, Ram Kishun Nishad, Village Karsawa, Post Bajjaur, Jaupur, U.P, India 222001</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <h3 class="text-white font-bold text-lg">NANDANI STEEL CONSULTANTS</h3>
+                <p class="text-sm mt-1">Customized mechanical equipment, plant revival, operating partnerships and running-plant support.</p>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                <p>Licensing & Registration: Company registration details are not publicly disclosed at this stage.</p>
+                <p class="mt-2">&copy; 2026 NANDANI STEEL CONSULTANTS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
