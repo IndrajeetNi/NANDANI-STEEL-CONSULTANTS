@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Requirement - Nandani Steel Consultants</title>
+    
+    <!-- ✅ WEB LOGO (FAVICON) -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .transition-all { transition: all 0.3s ease; }
+        .form-input {
+            width: 100%;
+            padding: 0.625rem 1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.5rem;
+            outline: none;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+        .form-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 0.375rem;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- ================= MAIN LAYOUT (Sidebar + Content) ================= -->
+    <div class="flex h-screen overflow-hidden">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="w-64 bg-slate-900 text-slate-300 flex flex-col hidden md:flex">
+            <div class="h-16 flex items-center px-6 bg-slate-950 border-b border-slate-800">
+                <img src="logo.jpg" alt="Logo" class="h-8 w-auto object-contain mr-3">
+                <span class="font-bold text-sm text-white tracking-wide">CUSTOMER PORTAL</span>
+            </div>
+            
+            <nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1 text-sm font-medium">
+                <!-- Dashboard Link (Points to previous page) -->
+                <a href="customer-dashboard.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-gauge-high w-5 text-center"></i> Dashboard
+                </a>
+                <!-- New Requirement (Active) -->
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 bg-blue-600 text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-circle-plus w-5 text-center"></i> New Requirement
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-invoice-dollar w-5 text-center"></i> Quotations
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-boxes-stacked w-5 text-center"></i> Active Orders
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-diagram-project w-5 text-center"></i> Project Status
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-folder-open w-5 text-center"></i> Documents
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-truck-fast w-5 text-center"></i> Dispatch
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-invoice w-5 text-center"></i> Invoices & Payments
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-triangle-exclamation w-5 text-center"></i> Complaints
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-headset w-5 text-center"></i> Support
+                </a>
+            </nav>
+
+            <div class="p-4 border-t border-slate-800">
+                <a href="index.html" class="flex items-center justify-center gap-2 w-full bg-slate-800 hover:bg-red-600 text-white py-2 rounded-lg text-sm transition-all">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+
+            <!-- TOP HEADER -->
+            <header class="h-16 bg-white shadow-sm flex items-center justify-between px-6 border-b border-slate-200">
+                <div class="flex items-center gap-4">
+                    <button class="md:hidden text-slate-600 text-xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="text-lg font-bold text-slate-800">New Requirement</h1>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-sm font-semibold text-slate-800">ABC Industries Pvt Ltd</p>
+                        <p class="text-xs text-slate-500">Customer</p>
+                    </div>
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">
+                        AB
+                    </div>
+                </div>
+            </header>
+
+            <!-- FORM CONTENT -->
+            <main class="flex-1 overflow-y-auto p-6 bg-slate-50">
+                
+                <form class="max-w-4xl mx-auto">
+                    <!-- Form Header -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 mb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <div>
+                            <h2 class="text-xl font-bold text-slate-900">Create New Requirement</h2>
+                            <p class="text-sm text-slate-500 mt-1">Please fill in the details below to submit your requirement.</p>
+                        </div>
+                        <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            Draft
+                        </span>
+                    </div>
+
+                    <!-- Section 1: Requirement Details -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 mb-6">
+                        <h3 class="text-lg font-bold text-slate-800 mb-5 border-b border-slate-100 pb-2">
+                            <i class="fa-solid fa-circle-info text-blue-500 mr-2"></i>Requirement Details
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <!-- Requirement Title -->
+                            <div class="md:col-span-2">
+                                <label class="form-label">Requirement Title <span class="text-red-500">*</span></label>
+                                <input type="text" class="form-input" placeholder="e.g., Supply of CCM Mold Tubes" required>
+                            </div>
+
+                            <!-- Product/Service Category -->
+                            <div>
+                                <label class="form-label">Product or Service Category <span class="text-red-500">*</span></label>
+                                <select class="form-input" required>
+                                    <option value="">Select Category</option>
+                                    <option value="CCM">Continuous Casting Equipment (CCM)</option>
+                                    <option value="UTILITY">Utility Equipment</option>
+                                    <option value="CONVEYOR">Conveyors & Cooling Beds</option>
+                                    <option value="ROLLING_MILL">Rolling Mill Equipment</option>
+                                    <option value="PRESSURE_VESSEL">Pressure Vessel Support</option>
+                                    <option value="CUSTOM_MACHINE">Custom Machine Design</option>
+                                    <option value="PLANT_REVIVAL">Plant Revival</option>
+                                    <option value="MAINTENANCE">Maintenance Services</option>
+                                    <option value="CONSULTANCY">Consultancy Service</option>
+                                    <option value="HYDRAULIC">Hydraulic Troubleshooting</option>
+                                    <option value="ERECTION">Erection of Equipment</option>
+                                    <option value="OTHER">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Quantity -->
+                            <div>
+                                <label class="form-label">Quantity <span class="text-red-500">*</span></label>
+                                <input type="number" class="form-input" placeholder="e.g., 10" min="1" required>
+                            </div>
+
+                            <!-- Technical Description -->
+                            <div class="md:col-span-2">
+                                <label class="form-label">Technical Description <span class="text-red-500">*</span></label>
+                                <textarea class="form-input" rows="4" placeholder="Describe your technical requirements, specifications, material grades, etc." required></textarea>
+                            </div>
+
+                            <!-- Required Delivery Date -->
+                            <div>
+                                <label class="form-label">Required Delivery Date <span class="text-red-500">*</span></label>
+                                <input type="date" class="form-input" required>
+                            </div>
+
+                            <!-- Delivery Location -->
+                            <div>
+                                <label class="form-label">Delivery Location <span class="text-red-500">*</span></label>
+                                <input type="text" class="form-input" placeholder="e.g., Surat, Gujarat" required>
+                            </div>
+
+                            <!-- Budget Indication (Optional) -->
+                            <div class="md:col-span-2">
+                                <label class="form-label">Budget Indication <span class="text-slate-400 text-xs font-normal">(Optional)</span></label>
+                                <input type="number" class="form-input" placeholder="e.g., 500000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Document Uploads -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 mb-6">
+                        <h3 class="text-lg font-bold text-slate-800 mb-5 border-b border-slate-100 pb-2">
+                            <i class="fa-solid fa-paperclip text-blue-500 mr-2"></i>Document Uploads
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                            <!-- Drawing Upload -->
+                            <div class="border-2 border-dashed border-slate-300 rounded-lg p-4 text-center hover:border-blue-500 transition-all cursor-pointer bg-slate-50">
+                                <i class="fa-solid fa-file-image text-3xl text-slate-400 mb-2"></i>
+                                <p class="text-sm font-medium text-slate-700">Drawing Upload</p>
+                                <p class="text-xs text-slate-500 mt-1">PDF, JPG, PNG</p>
+                                <input type="file" class="hidden" accept=".pdf,.jpg,.jpeg,.png">
+                            </div>
+
+                            <!-- Specification Upload -->
+                            <div class="border-2 border-dashed border-slate-300 rounded-lg p-4 text-center hover:border-blue-500 transition-all cursor-pointer bg-slate-50">
+                                <i class="fa-solid fa-file-lines text-3xl text-slate-400 mb-2"></i>
+                                <p class="text-sm font-medium text-slate-700">Specification Upload</p>
+                                <p class="text-xs text-slate-500 mt-1">PDF, DOC, XLS</p>
+                                <input type="file" class="hidden" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                            </div>
+
+                            <!-- Supporting Document Upload -->
+                            <div class="border-2 border-dashed border-slate-300 rounded-lg p-4 text-center hover:border-blue-500 transition-all cursor-pointer bg-slate-50">
+                                <i class="fa-solid fa-folder-open text-3xl text-slate-400 mb-2"></i>
+                                <p class="text-sm font-medium text-slate-700">Supporting Document</p>
+                                <p class="text-xs text-slate-500 mt-1">Any format</p>
+                                <input type="file" class="hidden">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Contact & Instructions -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 mb-6">
+                        <h3 class="text-lg font-bold text-slate-800 mb-5 border-b border-slate-100 pb-2">
+                            <i class="fa-solid fa-address-book text-blue-500 mr-2"></i>Contact & Instructions
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <!-- Contact Person Details -->
+                            <div>
+                                <label class="form-label">Contact Person Name <span class="text-red-500">*</span></label>
+                                <input type="text" class="form-input" placeholder="e.g., Ramesh Kumar" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Contact Person Mobile <span class="text-red-500">*</span></label>
+                                <input type="tel" class="form-input" placeholder="e.g., 9876543210" required>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="form-label">Contact Person Email <span class="text-red-500">*</span></label>
+                                <input type="email" class="form-input" placeholder="e.g., ramesh@abc.com" required>
+                            </div>
+                            
+                            <!-- Special Instructions -->
+                            <div class="md:col-span-2">
+                                <label class="form-label">Special Instructions</label>
+                                <textarea class="form-input" rows="3" placeholder="Any special instructions or notes for the vendor/team..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="flex flex-col sm:flex-row justify-end gap-3 mb-10">
+                        <button type="button" class="px-6 py-2.5 rounded-lg text-sm font-medium text-slate-600 bg-white border border-slate-300 hover:bg-slate-100 transition-all">
+                            Save as Draft
+                        </button>
+                        <button type="submit" class="px-6 py-2.5 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-md shadow-blue-200 flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Requirement
+                        </button>
+                    </div>
+                </form>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+                                                                           </html>
