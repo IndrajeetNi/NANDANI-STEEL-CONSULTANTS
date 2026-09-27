@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotations - Nandani Steel Consultants</title>
+    
+    <!-- ✅ WEB LOGO (FAVICON) -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .transition-all { transition: all 0.3s ease; }
+        .table-row:hover { background-color: #f8fafc; }
+        .badge { font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 9999px; display: inline-block; }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- ================= MAIN LAYOUT (Sidebar + Content) ================= -->
+    <div class="flex h-screen overflow-hidden">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="w-64 bg-slate-900 text-slate-300 flex flex-col hidden md:flex">
+            <div class="h-16 flex items-center px-6 bg-slate-950 border-b border-slate-800">
+                <img src="logo.jpg" alt="Logo" class="h-8 w-auto object-contain mr-3">
+                <span class="font-bold text-sm text-white tracking-wide">CUSTOMER PORTAL</span>
+            </div>
+            
+            <nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1 text-sm font-medium">
+                <a href="customer-dashboard.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-gauge-high w-5 text-center"></i> Dashboard
+                </a>
+                <a href="customer-new-requirement.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-circle-plus w-5 text-center"></i> New Requirement
+                </a>
+                <!-- Quotations (Active) -->
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 bg-blue-600 text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-invoice-dollar w-5 text-center"></i> Quotations
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-boxes-stacked w-5 text-center"></i> Active Orders
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-diagram-project w-5 text-center"></i> Project Status
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-folder-open w-5 text-center"></i> Documents
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-truck-fast w-5 text-center"></i> Dispatch
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-file-invoice w-5 text-center"></i> Invoices & Payments
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-triangle-exclamation w-5 text-center"></i> Complaints
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-slate-800 hover:text-white rounded-lg transition-all">
+                    <i class="fa-solid fa-headset w-5 text-center"></i> Support
+                </a>
+            </nav>
+
+            <div class="p-4 border-t border-slate-800">
+                <a href="index.html" class="flex items-center justify-center gap-2 w-full bg-slate-800 hover:bg-red-600 text-white py-2 rounded-lg text-sm transition-all">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+
+            <!-- TOP HEADER -->
+            <header class="h-16 bg-white shadow-sm flex items-center justify-between px-6 border-b border-slate-200">
+                <div class="flex items-center gap-4">
+                    <button class="md:hidden text-slate-600 text-xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="text-lg font-bold text-slate-800">Quotations</h1>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-sm font-semibold text-slate-800">ABC Industries Pvt Ltd</p>
+                        <p class="text-xs text-slate-500">Customer</p>
+                    </div>
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">
+                        AB
+                    </div>
+                </div>
+            </header>
+
+            <!-- QUOTATION CONTENT -->
+            <main class="flex-1 overflow-y-auto p-6 bg-slate-50">
+                
+                <!-- Page Title & Actions -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Quotation Management</h2>
+                        <p class="text-sm text-slate-500 mt-1">View, download, and manage all your received quotations here.</p>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="relative w-full sm:w-72">
+                        <i class="fa-solid fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" placeholder="Search quotation no..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none text-sm transition-all">
+                    </div>
+                </div>
+
+                <!-- Quotations Table -->
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-500 text-xs font-bold uppercase tracking-wider border-b border-slate-200">
+                                    <th class="px-6 py-4">Quotation No.</th>
+                                    <th class="px-6 py-4">Requirement Title</th>
+                                    <th class="px-6 py-4">Date</th>
+                                    <th class="px-6 py-4">Amount</th>
+                                    <th class="px-6 py-4">Status</th>
+                                    <th class="px-6 py-4 text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 text-sm">
+                                
+                                <!-- Row 1: Submitted -->
+                                <tr class="table-row transition-all">
+                                    <td class="px-6 py-4 font-medium text-blue-600">QUO-2026-001</td>
+                                    <td class="px-6 py-4 text-slate-700">Supply of CCM Mold Tubes</td>
+                                    <td class="px-6 py-4 text-slate-500">15 Jan 2026</td>
+                                    <td class="px-6 py-4 font-semibold text-slate-900">₹ 5,50,000</td>
+                                    <td class="px-6 py-4"><span class="badge bg-blue-100 text-blue-700">Submitted</span></td>
+                                    <td class="px-6 py-4 text-right space-x-2">
+                                        <button title="View Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-blue-100 hover:text-blue-600 transition-all"><i class="fa-solid fa-eye"></i></button>
+                                        <button title="Download Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-emerald-100 hover:text-emerald-600 transition-all"><i class="fa-solid fa-download"></i></button>
+                                        <button title="Accept Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-green-500 hover:text-white transition-all"><i class="fa-solid fa-check"></i></button>
+                                        <button title="Reject Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-red-500 hover:text-white transition-all"><i class="fa-solid fa-xmark"></i></button>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 2: Clarification Required -->
+                                <tr class="table-row transition-all">
+                                    <td class="px-6 py-4 font-medium text-blue-600">QUO-2026-002</td>
+                                    <td class="px-6 py-4 text-slate-700">Utility Equipment Modifications</td>
+                                    <td class="px-6 py-4 text-slate-500">10 Feb 2026</td>
+                                    <td class="px-6 py-4 font-semibold text-slate-900">₹ 1,20,000</td>
+                                    <td class="px-6 py-4"><span class="badge bg-amber-100 text-amber-700">Clarification Required</span></td>
+                                    <td class="px-6 py-4 text-right space-x-2">
+                                        <button title="View Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-blue-100 hover:text-blue-600 transition-all"><i class="fa-solid fa-eye"></i></button>
+                                        <button title="Submit Clarification" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-purple-100 hover:text-purple-600 transition-all"><i class="fa-solid fa-comment-dots"></i></button>
+                                        <button title="Request Revised Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-orange-100 hover:text-orange-600 transition-all"><i class="fa-solid fa-rotate"></i></button>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 3: Accepted / PO Pending -->
+                                <tr class="table-row transition-all">
+                                    <td class="px-6 py-4 font-medium text-blue-600">QUO-2026-003</td>
+                                    <td class="px-6 py-4 text-slate-700">Custom Machine Design</td>
+                                    <td class="px-6 py-4 text-slate-500">05 Mar 2026</td>
+                                    <td class="px-6 py-4 font-semibold text-slate-900">₹ 8,00,000</td>
+                                    <td class="px-6 py-4"><span class="badge bg-emerald-100 text-emerald-700">Accepted</span></td>
+                                    <td class="px-6 py-4 text-right space-x-2">
+                                        <button title="Upload Customer PO" class="px-3 h-8 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all text-xs font-medium"><i class="fa-solid fa-upload mr-1"></i> Upload PO</button>
+                                        <button title="Download Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-emerald-100 hover:text-emerald-600 transition-all"><i class="fa-solid fa-download"></i></button>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 4: Rejected -->
+                                <tr class="table-row transition-all">
+                                    <td class="px-6 py-4 font-medium text-blue-600">QUO-2026-004</td>
+                                    <td class="px-6 py-4 text-slate-700">Erection of Equipment</td>
+                                    <td class="px-6 py-4 text-slate-500">20 Mar 2026</td>
+                                    <td class="px-6 py-4 font-semibold text-slate-900">₹ 3,40,000</td>
+                                    <td class="px-6 py-4"><span class="badge bg-red-100 text-red-700">Rejected</span></td>
+                                    <td class="px-6 py-4 text-right space-x-2">
+                                        <button title="View Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-blue-100 hover:text-blue-600 transition-all"><i class="fa-solid fa-eye"></i></button>
+                                        <button title="Request Revised Quotation" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 hover:bg-orange-100 hover:text-orange-600 transition-all"><i class="fa-solid fa-rotate"></i></button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Pagination (Optional but nice for UI) -->
+                    <div class="px-6 py-4 border-t border-slate-200 flex items-center justify-between text-sm text-slate-500">
+                        <span>Showing 4 of 4 quotations</span>
+                        <div class="flex gap-1">
+                            <button class="px-3 py-1 border border-slate-300 rounded-md bg-white hover:bg-slate-50 disabled:opacity-50" disabled>Previous</button>
+                            <button class="px-3 py-1 border border-slate-300 rounded-md bg-white hover:bg-slate-50">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+  </html>
